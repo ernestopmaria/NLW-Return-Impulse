@@ -1,19 +1,13 @@
-interface IProps{
-  title?:string
-}
-function Button(props:IProps){
-  return <p>{props.title ? 'Default': '0'}</p>
-}
-function App() {
+import { Widget } from "./components/Widget";
 
 
-  return (
-    <>
-<Button title="Jorge"/>
-<Button />
-</>
-    
-  )
+export function App(){
+return(
+  <>
+  <Widget/>
+  </>
+
+)
 }
 
-export default App
+
